@@ -3,7 +3,7 @@ function compute()
     //get prinncipal from form
     var principal = document.getElementById("principal").value;
     //give error if principal is 0 or lower
-    if(parseInt(principal)<=0){
+    if(parseInt(principal)<=0 || principal==""){
         alert("Enter a positive number");
         document.getElementById("principal").focus();
         return false;
